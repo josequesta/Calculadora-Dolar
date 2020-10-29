@@ -1,36 +1,51 @@
 <html>
-    <head>
-        <title>Calculadora</title>
-        <script src="script.js" language="javascript" type="text/javascript"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div id="titulo">
-            <h1>Calculadora de Precios en dolar turista teniendo dolar blue</h1>
-        </div>
-        <div id="informacion">
-            <div id="oficial">
-                <label for="dolaroficial">Precio Dolar oficial:</label>
-                <input type="number" id="dolaroficial">
-                <br/><br/>
-            </div>
-            <div id="blue">
-                <label for="dolarblue">Precio Dolar Blue:</label>
-                <input type="number" id="dolarblue">
-                <br/><br/>
-            </div>
-            <div id="producto">
-                <label for="precioproducto">Precio del Producto en Dolares:</label>
-                <input type="number" id="precioproducto">
-                <br/><br/>
-            </div>
-        </div>
-        <div id="boton">
-            <button onclick="calcularcosto() ">Calcular Costo</button>
-        </div>
-        <div id="resultados">
-            <h3>Precio en Ars $<span id="precioenars"></span></h3>
-            <h3>Precio Pagando Dolar Blue $<span id="precioenblue"></span></h3>
-        </div>
-    </body>
+  <head>
+    <title>Calculadora</title>
+    <script
+      src="script.js"
+      language="javascript"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="titulo">
+      <h1>Calculadora de Precios en dolar turista teniendo dolar blue</h1>
+    </div>
+    <form id="informacion">
+      <div id="oficial">
+        <label for="dolaroficial">Precio Dolar oficial:</label>
+        <input type="number" id="dolaroficial" />
+        <br /><br />
+        <input type="number" id="dolaroficial" required="" />
+        <br /><br />
+      </div>
+      <div id="blue">
+        <label for="dolarblue">Precio Dolar Blue:</label>
+        <input type="number" id="dolarblue" />
+        <br /><br />
+        <input type="number" id="dolarblue" required="" />
+        <br /><br />
+      </div>
+      <div id="producto">
+        <label for="precioproducto">Precio del Producto en Dolares:</label>
+        <input type="number" id="precioproducto" />
+        <br /><br />
+        <input type="number" id="precioproducto" required="" />
+        <br /><br />
+      </div>
+      <div id="boton">
+        <button onclick="calcularcosto() ">Calcular Costo</button>
+      </div>
+      <div id="boton">
+        <button onclick="calcularcosto()">Calcular Costo</button>
+      </div>
+    </form>
+    <div id="resultados">
+      <h3>Precio en Ars $<span id="precioenars"></span></h3>
+      <h3>Precio Pagando Dolar Blue $<span id="precioenblue"></span></h3>
+      <h3>Precio en Ars $<span id="precioenars">0.00</span></h3>
+      <h3>Precio Pagando Dolar Blue $<span id="precioenblue">NaN</span></h3>
+    </div>
+  </body>
 </html>
